@@ -1,8 +1,42 @@
 .zs {
+    display: flex;
+    align-items: center;
     width: 100%;
-    box-sizing: border-box;
-    max-width: 1060px;
+    padding: 0px 24px;
 }
 .sm {
     display: flex;
+}
+.zzs {
+    display: flex;
+
+}
+.at {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    color: aqua;
+    margin-right: 14px;
+}
+.wz {
+    white-space: nowrap;
+}
+.zj {
+    flex: 1fr;
+    height: 40px;
+    padding: 0px 48px 0px 40px;
+    border-radius: 8px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.al {
+    display: flex;
+    height: 20px;
+}
+.tp {
+    position: absolute;
+    top: 4px;
+    right: 7px;
 }
