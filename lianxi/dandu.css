@@ -1,0 +1,15 @@
+.top {
+    display: flex;
+}
+.youbian ul {
+    display: flex;
+    white-space: nowrap;
+}
+.zhongjian {
+    display: flex;
+    align-items: center;
+}
+.youbian {
+    display: flex;
+    align-items: center;
+}
