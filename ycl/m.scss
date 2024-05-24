@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    color: red;
+}
+@function xx($x){
+    $s: '#{random(100)}vw #{random(100)}vh #fff';
+    @for $i from 2 through $x {
+        $s: '#{$s},#{random(100)}vw #{random(100)}vh #fff';
+    }
+    @return unquote($s)
+}
+.layer1 {
+    $size:1px;
+    position: fixed;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    background-color: aqua;
+    top: 0;
+    left: 0;
+    box-shadow: xx(1000);
+    animation: move 100s linear infinite;
+    &::after{
+        content: '';
+        position: fixed;
+        left: 0;
+        top: 100vh;
+        width: $size;
+        height: $size;
+        border-radius: inherit;
+        box-shadow: inherit;
+    }
+}
+@keyframes move{
+    100%{
+        transform: translateY(-100vh);
+    }
+}
