@@ -58,6 +58,7 @@
     grid-area: d1;
     border-left: 3px solid rgb(59, 153, 252);
     text-align: center;
+    background-color: white;
     line-height: 90px;
     /* grid的行高互相影响,要设就得一起 */
 }
@@ -83,6 +84,7 @@
 .d4 {
     grid-area: d4;
     padding: 8px 25px 0px 25px;
+    background-color: white;
 }
 .xxtop {
     display: flex;
@@ -117,4 +119,32 @@
 }
 .z {
     margin: 25px;
+}
+.xxtz {
+    width: 100%;
+    height: 400px;
+    background-color: cadetblue;
+    padding: 120px 00px 0px 50px;
+}
+.qiehuan {
+    /* border: 3px solid black; */
+    margin-top: 60px;
+}
+.qiehuan ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px 520px;
+    /* 可以用padding来居中但是ul只自动表述左边 */
+}
+.qiehuan li {
+    border: 2px solid rgba(172,172,191,0.5);
+    width: 10px;
+    height:10px;
+    border-radius: 100%;
+    background-color: rgba(172,172,191,0.5);
+    margin-left: 20px;
+}
+.qiehuan li:nth-child(1) {
+    border: 2px solid white;
+    background-color: white;
 }
